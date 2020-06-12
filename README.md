@@ -14,7 +14,7 @@ Every script takes arguments from the console. If no arguments are given, the sc
 ## Parsing
 This folder contains the raw json data from Instagram as well as various scripts that convert and process the data.
 
-### *log-generator*
+### *log_generator*
 Generates a text log of Instagram dms from `messages.json`. The log can be generated with a stamp including the date and account, or it can just be the raw text (for the purpose of training data). This log is used by many other scripts.
 
 ### *filter_log*
@@ -23,13 +23,13 @@ Filters message log to only contain printable characters, and emojis. Serves the
 ## Visualization
 Contains scripts for visualizing the Instagram data.
 
-### *pie-messages*
+### *pie_messages*
 Shows the total number of messages by each person in a log as a pie chart, as well as their username and percentage out of every message.
 
-### *word-freq*
+### *word_freq*
 Displays frequency of the usage of a word over time. The amount of times the word(s) are said is added up per day, and graphed. Note that it counts the word only if there's no alphanumeric characters on either side. So for example the word `he` would not be found in the message `help`.
 
-### *like-freq*
+### *like_freq*
 Displays the amount of likes every n days from the `likes.json` data. The days between n are not counted or averaged.
 
 ## InstaRNN
