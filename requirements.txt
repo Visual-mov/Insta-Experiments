@@ -1,0 +1,6 @@
+# Built for Tensorflow 2.2.0
+tensorflow==2.2.0
+numpy
+matplotlib
+emoji
+pyttsx3
